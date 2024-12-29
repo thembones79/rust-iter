@@ -3,6 +3,9 @@ fn print_elements(elements: &Vec<String>) {
         println!("{:#?}", element);
     }
 }
+fn print_elements2(elements: &Vec<String>) {
+    elements.iter().for_each(|el| println!("{}", el));
+}
 fn main() {
     let colors = vec![
         String::from("red"),
@@ -18,4 +21,5 @@ fn main() {
     // println!("{:#?}", colors_iter.next());
 
     print_elements(&colors);
+    print_elements2(&colors);
 }
