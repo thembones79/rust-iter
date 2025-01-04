@@ -30,6 +30,8 @@ fn main() {
     // println!("{:#?}", colors_iter.next());
 
     print_elements(&colors);
+    let uppercased = to_uppercase(&colors);
+    println!("{:#?}", uppercased);
     shorten_strings(&mut colors);
     print_elements2(&colors);
 }
